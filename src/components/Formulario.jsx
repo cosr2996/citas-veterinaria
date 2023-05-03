@@ -45,12 +45,13 @@ const Formulario = ({pacientes,setPacientes,paciente,setPaciente}) => {
             sintomas,
         }
 
+        //? EDITANDO EL REGISTRO
         if(paciente.id){
             //Editando el registro
-            objetoPaciente.id= paciente.id
-            const pacientesActualizado = pacientes.map(pacienteState => pacienteState.id === paciente.id?objetoPaciente:pacienteState)
-            setPacientes(pacientesActualizado)
-            setPacientes({})
+            objetoPaciente.id= paciente.id//LA VERCION ACTULIZADA
+            const pacientesActualizados = pacientes.map(pacienteState => pacienteState.id === paciente.id?objetoPaciente:pacienteState)
+            setPacientes(pacientesActualizados)
+            setPaciente({})
         }else{
             //nuevo registro
             objetoPaciente.id = generarID()
