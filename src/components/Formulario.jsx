@@ -59,13 +59,11 @@ const Formulario = ({pacientes,setPacientes,paciente,setPaciente}) => {
         }
         
         //reiniciar el form
-
         setNombre('')
         setEmail('')
         setPropietario('')
         setFecha('')
         setSintomas('')
-        
     }
 
     return (
@@ -106,9 +104,4 @@ const Formulario = ({pacientes,setPacientes,paciente,setPaciente}) => {
         </div>
     )
 }
-
 export default Formulario
-
-
-
-//rafce
